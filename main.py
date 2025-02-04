@@ -1,8 +1,10 @@
 import random
-
-caracteres = "+-/*!&$#?=@abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
-longitud_contraseña = int(input("Introduce la longitud de la contraseña: "))
-contraseña_generada = ""
-for _ in range(longitud_contraseña):
+ longitud_contrasena = int(input("Introduce la longitud de la contraseña: "))
+def gen_pass(longitud_contrasena):
+   caracteres = "+-/*!&$#?=@abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+   contraseña_generada = ""
+   for i in range(longitud_contrasena):
     contraseña_generada += random.choice(caracteres)
 print("Tu contraseña es", contraseña_generada)
+
+    return password
